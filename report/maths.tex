@@ -1,6 +1,18 @@
 \newcommand{\parallelsum}{\mathbin{\!/\mkern-5mu/\!}}
+
+\section{Circuit}
+
+Figure \ref{fig:circuit} shows the circuit chosen.
+This circuit was chosen due to it having two stages, helping increase the gain.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.75\textwidth]{./images/coursework.pdf}
+	\caption{The chosen circuit}
+	\label{fig:circuit}
+\end{figure}
+
 \section{Design calculations}
-\subsection{Stage 2}
 
 The first calculation done was to determine the required minimum unity gain frequency ($\omega_{0dB}$), as this would help define pole frequencies.
 This was done using the knowledge of the minimum required gain at the full power frequency, this gave a corner frequency beyond which the gain would be dropping off at a rate of $20dB$ per decade.
@@ -21,6 +33,8 @@ $A_{dB} = 20 log(A_{v})$ \\
 $A_{v} = 10^{\frac{A_{dB}}{20}}$ \\
 $A_{v} = 10^{\frac{60}{20}}$ \\
 $A_{v} = 1000$ \\
+
+\subsection{Stage 2}
 
 Both poles in the amplifier need to be above $100KHz$ ($\num{2\pi e5}$).
 The pole in the second stage of the op-amp is formed between $M_{8}$ and $C_{L}$.
